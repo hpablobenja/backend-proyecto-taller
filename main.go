@@ -9,7 +9,7 @@ import (
 
 	"github.com/gorilla/mux"
 )
-
+//Addr:    ":9000",
 func main() {
 	commons.Migrate()
 
@@ -18,8 +18,7 @@ func main() {
 	commons.EnableCORS(router)
 
 	server := http.Server{
-		//Addr:    ":9000",
-		Addr:os.Getenv("PORT"),
+		Addr  os.Getenv("PORT"),
 		Handler: router,
 	}
 
