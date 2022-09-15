@@ -3,7 +3,7 @@ package main
 import (
 	"log"
 	"net/http"
-//	"os"
+	"os"
 	"crud-mysql/commons"
 	"crud-mysql/routes"
 
@@ -16,10 +16,10 @@ func main() {
 	router := mux.NewRouter()
 	routes.SetPersonaRoutes(router)
 	commons.EnableCORS(router)
-	//port := os.Getenv("PORT")
+	port := os.Getenv("PORT")
 
 	server := http.Server{
-		Addr:  ":9000",
+		Addr:  ":"+port,
 		Handler: router,
 	}
 
