@@ -18,7 +18,7 @@ func main() {
 	commons.EnableCORS(router)
 
 	server := http.Server{
-		Addr  os.Getenv("PORT"),
+		Addr:  os.Getenv("PORT"),
 		Handler: router,
 	}
 
