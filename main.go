@@ -16,9 +16,10 @@ func main() {
 	router := mux.NewRouter()
 	routes.SetPersonaRoutes(router)
 	commons.EnableCORS(router)
-
+	port := os.Getenv("PORT")
+	
 	server := http.Server{
-		Addr:  os.Getenv("PORT"),
+		Addr:  port,
 		Handler: router,
 	}
 
