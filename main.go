@@ -3,23 +3,24 @@ package main
 import (
 	"log"
 	"net/http"
-	"os"
-	"crud-mysql/commons"
-	"crud-mysql/routes"
+	//"os"
+	"crud-mysql/conexiones"
+	"crud-mysql/rutas"
 
 	"github.com/gorilla/mux"
 )
-//Addr:    ":90000",
+//Addr:    ":9000",
+//Addr:  ":"+port
 func main() {
-	commons.Migrate()
+	conexiones.Migrate()
 
 	router := mux.NewRouter()
-	routes.SetPersonaRoutes(router)
-	commons.EnableCORS(router)
-	port := os.Getenv("PORT")
+	rutas.SetPersonaRoutes(router)
+	conexiones.EnableCORS(router)
+	//port := os.Getenv("PORT")
 
 	server := http.Server{
-		Addr:  ":"+port,
+		Addr:    ":9000",
 		Handler: router,
 	}
 

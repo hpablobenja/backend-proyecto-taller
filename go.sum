@@ -1,5 +1,3 @@
-github.com/4softwaredevelopers/demo-crud-api-rest-go v0.0.0-20210502172256-62b3055fa71b h1:0y3dVapv3M7aLPc04N1cN3SRAEg7WOj4mo/3QJ4+63k=
-github.com/4softwaredevelopers/demo-crud-api-rest-go v0.0.0-20210502172256-62b3055fa71b/go.mod h1:H6MRWurYMVdfT97fXPlgZqFKxoVlPofMAPc7Sm+irV8=
 github.com/PuerkitoBio/goquery v1.5.1/go.mod h1:GsLWisAFVj4WgDibEWF4pvYnkVQBpKBKeU+7zCJoLcc=
 github.com/andybalholm/cascadia v1.1.0/go.mod h1:GsXiBklL0woXo1j/WYWtSYYC4ouU9PqHO0sqidkEA4Y=
 github.com/denisenkom/go-mssqldb v0.0.0-20191124224453-732737034ffd h1:83Wprp6ROGeiHFAP8WJdI2RoxALQYgdllERc3N5N2DM=
